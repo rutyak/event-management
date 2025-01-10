@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+  margin: 0px 35px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #6a0dad;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #8e44ad;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #6a0dad;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.menu-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .header {
+    margin: 0px 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    margin: 0px 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .menu-icon .icon{
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu-icon .icon{
+    display: none;
+  }
+}

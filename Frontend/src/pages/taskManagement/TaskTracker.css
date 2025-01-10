@@ -1,0 +1,106 @@
+.task-tracker-container {
+  margin: 0 auto;
+  padding: 0px 35px;
+  border-radius: 8px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-tasks {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.task-table th {
+  background-color: #f1f5f9;
+  color: #374151;
+  font-weight: bold;
+}
+
+.task-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.status-completed {
+  color: green;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: red;
+  font-weight: bold;
+}
+
+.status-button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.complete-button {
+  background-color: #10b981;
+}
+
+.complete-button:hover {
+  background-color: #059669;
+}
+
+.pending-button {
+  background-color: #ef4444;
+}
+
+.pending-button:hover {
+  background-color: #dc2626;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 44%;
+}
+
+.dropdown-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.dropdown {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}

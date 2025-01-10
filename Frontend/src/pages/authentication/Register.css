@@ -1,0 +1,185 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.auth-container {
+  background: #ffffff;
+  border-top-left-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 600px;
+  width: 47%;
+}
+
+.register-card {
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px;
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+
+.toggle-visibility:hover {
+  color: #333;
+}
+
+.register-btn {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #6c63ff, #836fff);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: linear-gradient(90deg, #836fff, #6c63ff);
+}
+
+.login-link {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.login-link a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.authImage {
+  width: 47%;
+  height: 600px;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .register-btn {
+    font-size: 14px;
+  }
+
+  .authImage {
+    display: none;
+  }
+
+  .container {
+    padding: 1px;
+  }
+
+  .auth-container {
+    width: 92%;
+    padding: 20px;
+  }
+
+  .register-card {
+    width: 98%;
+    padding: 10px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .authImage {
+    display: none;
+  }
+
+  .auth-container {
+    width: 89%;
+  }
+
+  .register-card {
+    width: 96%;
+    padding: 21px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .authImage {
+    width: 60%;
+  }
+
+  .register-card {
+    width: 100%;
+    padding: 21px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .authImage {
+    width: 47%;
+    height: 600px;
+  }
+
+  .register-card {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+  }
+}
